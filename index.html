@@ -1,0 +1,268 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Happy Valentines</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <div id="overlay" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgb(255, 179, 238); z-index: 9999; display: flex; justify-content: center; align-items: center;">
+         <div style="text-align: center;">
+            <div class="mb-3" style="font-family: 'Dancing Script', cursive; font-size: 1.5em;">Haii Miss Ayu, tap "Buka" yaaa</div>
+            <button id="startButton" class="btn btn-secondary text-dark" style="font-size: 1.5em; background-color: white; border: 3px solid #dea2d2; border-radius: 10px; font-family: 'Dancing Script', cursive;">Buka</button>
+         </div>    </div>    
+      <script>
+         document.addEventListener('DOMContentLoaded', function() {
+         const startButton = document.getElementById('startButton');
+         const overlay = document.getElementById('overlay');
+         startButton.addEventListener('click', function() {
+            overlay.style.display = 'none';
+            document.getElementById('audio-music').play();
+         });
+         });
+      </script>
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div  class="head_top" style="background-color: #dea2d2;">
+            <div class="container">
+               <!-- <div class="header"> -->
+                  <!-- <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><img src="images/logo.png" alt="#" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#"> Home  </a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#contact">About</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div> -->
+               <!-- </div> -->
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- banner -->
+            <section class="banner_main">
+               <div class="container">
+                  <div class="row d_flex">
+                     <div class="col-md-12">
+                        <div class="text-bg">
+                           <span> Happy Late Valentines Day</span>
+                           <h1>Miss Ayu</h1>
+                           <!-- <a href="#">Read More</a> -->
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+      <!-- end banner -->
+      <!-- weare -->
+      <div class="weare">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 mb-3">
+                  <div class="titlepage">
+                     <h2>You are a Wonderful Person</h2>
+                     <span>I want you to know that you are very special. Your presence can live up the moments and lights up everyone hearts <br> <br>
+                    Thank you for your kindness, and all the joy that you brings</span>
+                    </span>
+                  </div>
+                  <audio  onplay="startImage()" id="audio-music" class="w-100 d-none" id="player" autoplay controls>
+                    <source src="images/bgm.mp3" type="audio/mp3">
+                </audio>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-10 offset-md-1 d-none" id="image-container" style="height: 380px;">
+                  <div class="row">
+                     <div class="col-md-12 mb-3" id="img-1">
+                        <div class="weare_box " >
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/3a54ae71-f633-4195-9907-9e48fb45e486.jpg" alt="#"/></figure>    </div>
+                     </div>
+                     <div class="col-md-12 mb-3" id="img-2">
+                        <div class="weare_box ">
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/0e1903ce-cc39-4871-ad9e-0147675dbff7.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-12 mb-3" id="img-3">
+                        <div class="weare_box">
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/049bfc01-6022-43cb-bc56-cd649af3ab31.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-12 mb-3" id="img-4">
+                        <div class="weare_box ">
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/bbcd7485-e8df-4eb3-8a73-8e649e1a9ade.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-12 mb-3" id="img-5">
+                        <div class="weare_box">
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/b70fcf07-1c1c-46c6-9bec-6affbeb6e302.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-12 mb-3" id="img-6">
+                        <div class="weare_box">
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/89f66818-2d56-419d-a6b4-c67a3a0f0e2e.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-12 mb-3" id="img-7">
+                        <div class="weare_box">
+                           <figure><img style="height: 360px; width: 360px; object-fit: cover;" src="images/3c8b2dd4-60b2-4f02-92ff-cfec28fe0870.jpg" alt="#"/></figure>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 d-none" id="gumuyna">
+                  <div class="weare_box">
+                     <p>Alamak siapee ni cantiknyooo 😊</p>
+                     <!-- <a class="read_more" href="#">Read more</a> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- weare -->
+      <!-- Our -->
+
+      <!-- end Our -->
+      <!--  footer -->
+      <footer class="mt-3">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-10 offset-md-1">
+                     <div class="cont">
+                        <h3> <strong class="multi">Perihal Langit Dikala Hadirmu</strong><br>
+                           Langit memang tak selalu biru, tapi dengan hadirmu terhapuslah semua sendu~
+                        </h3>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p>Copyright 2025 <br> <br> This website specially developed by Han for <a href="https://instagram.com/nikdayusudiasuh">Miss Ayu</a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      
+      <!-- <audio autoplay>
+            <source src="images/bgm.mp3" type="audio/mpeg">
+      </audio> -->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+      <script>
+        let images = [1,2,3,4,5,6,7];
+        let index = 1;
+        $(document).ready(function(){
+            $("#img-1").fadeOut(10);
+            $("#img-2").fadeOut(10);
+            $("#img-3").fadeOut(10);
+            $("#img-4").fadeOut(10);
+            $("#img-5").fadeOut(10);
+            $("#img-6").fadeOut(10);
+            $("#img-7").fadeOut(10);
+            // setInterval(function(){
+            //     $("#img-"+index).fadeIn(2000);
+            //     $("#img-"+index).fadeOut(3000);
+            //     if(index == 4) index = 1;
+            //     else index++;
+            // },6050);
+        });
+        function timeout(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+        let started = false;
+        async function startImage(){
+            
+            if(!started){
+                $("#image-container").removeClass("d-none");
+                $("#gumuyna").removeClass("d-none");
+                console.log("played");
+                started = true;
+                $("#img-"+index).fadeIn(3000);
+                await timeout(5000);
+                $("#img-"+index).fadeOut(2000);
+                await timeout(2000);
+               while(true){
+                    $("#img-"+index).fadeIn(3000);
+                    await timeout(5000);
+                    $("#img-"+index).fadeOut(3000);
+                    await timeout(3050);
+                    if(index == 7) index = 1;
+                    else index++;
+               }
+            }
+        }
+      </script>
+   </body>
+</html>
+
